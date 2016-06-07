@@ -1,0 +1,278 @@
+/* VALIDE PAR https://jigsaw.w3.org/css-validator/ */
+
+
+
+body
+{
+
+	font-family:"Georgia";	
+	background-image: url("back1.png");
+	background-repeat: 	repeat;
+	background-size: 100% 100%;
+
+	margin: 0;
+
+	
+}
+
+html {
+	
+	height:100%;
+}
+
+#fond
+{
+		position: fixed;
+		top: 0;
+		left:0;
+
+		opacity: 0.5;
+}
+
+/* LA BANNIERE */
+#bn_image{
+	text-decoration:inherit;
+	display: block;
+	margin : 0 auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+    height: 350px;
+	width: 880px;
+    border-radius: 10px;
+    background: url(banner.png) no-repeat;
+    position: relative;
+	
+}
+
+/* ************* */
+
+/* ICI TOUT CE QUI CONCERNE LA RECHERCHE */
+#Recherche {
+	vertical-align: middle;
+    display: inline-block;
+}
+#Recherche #motclef {
+	border: 2px solid grey;
+	background-image: url(back1.png);
+	font: 15px Arial,Verdana,sans-serif;
+	color: white;
+	padding-left : 5px;
+
+}
+#Recherche #rechb {
+
+	border-radius: 0px 7px 7px 0px;
+	font: 15px Arial,Verdana,sans-serif;
+	border: 3px solid grey;
+	background-color : rgb(250,250,250);
+
+
+}
+#Recherche #rechb:hover {
+	background-color : rgb(150,150,150);
+}
+
+
+
+/* ************************************ */
+
+/* BOUTONS */
+.buttonb	 { /* bouton de la barre 1 */
+	text-decoration: inherit;
+	color: black;
+	border-radius: 7px;
+	font: 15px Arial,Verdana,sans-serif;
+	border: 3px solid grey;
+	background-color : rgb(250,250,250);
+	padding: 1px 10px 1px 10px;
+}
+
+.buttonb:hover, #rechb:hover	 { /* bouton de la barre 1 */
+	background-color : rgb(150,150,150);
+}
+
+
+/**********/
+
+/******** BARRE 1 *********/
+.barre1 { 
+
+	background-color: rgba(80,80,80, 0.5);
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+}
+.barre1 #menu1 { 
+	display : inline;
+
+}
+.barre1 #menu2 { 
+	display : block;
+	
+
+}
+.barre1 li {
+	display : inline;
+	list-style-type: none;
+	border-radius: 7px;
+	font: 15px Arial,Verdana,sans-serif;
+}
+#menu2 a {
+	
+	text-decoration:none;
+	text-transform:inherit;
+	overflow:hidden;
+}
+#panier{
+background-image:url(stack.png);
+background-position:left;
+background-repeat:no-repeat;
+}
+/**************************/
+
+/* ****************        ANIMATIONS DEVISES ET LANGUES      ******************* */
+#menu2, #menu2 ul{
+vertical-align:middle;	
+padding:0;
+margin:0;
+margin-right:60px;
+
+text-align:center;
+float:right;
+border-radius:0 0 8px 8px;
+
+}
+
+
+#menu2 li{
+display:inline-block;
+position:relative;
+	border-radius: 7px;
+	font: 15px Arial,Verdana,sans-serif;
+	border: 3px solid grey;
+	background-color : rgb(250,250,250);
+	
+}
+#menu2 ul li{	
+display:inherit;
+border-radius:0;
+width:85px;
+min-width:85px;
+
+}
+#menu2 ul li:hover{
+border-color: rgb(50,50,50)	;
+
+
+}
+#menu2 ul li:last-child{
+border-radius:0 0 8px 8px;
+}
+#menu2 ul{
+position:absolute;
+z-index: 1000;
+max-height:0;
+left: 0;
+right: 0;
+
+}
+#menu2 li:hover ul{
+max-height:150px;
+background-color : rgb(150,150,150);
+
+}
+
+/* background des liens menus */
+#menu2 li:not(:hover){
+
+background-color : rgb(250,250,250);	
+overflow: hidden;
+
+}
+/* background des liens menus et sous menus au survol */
+#menu2 li:hover {
+	background-color : rgb(150,150,150);
+}
+/* les a href */
+#menu2 a{
+text-decoration:none;
+padding:8px 20px;
+font-family:arial;
+color:black;
+
+}
+#menu2 .choix:active{
+color:white;
+font: bold;
+
+}
+#menu2 ul .choix{
+padding:0px;
+vertical-align:middle;
+}
+/* ******************************************************************************** */
+
+
+.erreurp {
+	text-decoration: inherit;
+	display: block;
+	padding-top: 20px;
+	color: black;
+}
+
+/******** BARRE 2 *********/
+#barre2 { /* la barre2 */
+background-color: #424242;
+color:white;
+margin:10px 100px 0 100px;	
+text-align:center;
+}
+
+#b2n{
+	text-decoration: inherit;
+	color: rgb(255,0,64);
+	display: inline-block;
+	padding: 3px 6px 3px 6px;
+	margin: 0px;
+	font: 18px Arial,Verdana,sans-serif;
+}
+
+#barre2 a:not([id="b2n"]){
+	text-decoration: inherit;
+	color:white;
+	display: inline-block;
+	padding: 3px 6px 3px 6px;
+	margin: 0px;
+	font: 18px Arial,Verdana,sans-serif;
+}
+
+#barre2 a:not([id="b2n"]):hover {
+    background-color:grey;
+    color:black;
+}
+
+#barre2 #b2n:hover {
+    background-color:grey;
+}
+
+
+/*************** *****************/
+
+@media only screen and (max-width: 1000px) {
+	
+	/* CSS déjà optimisé pour le responsible design sans @media */
+	
+	p {
+	color: red;
+	}
+	
+	.b2, #barre2 a {
+	display : inline;
+	}
+
+	
+	.promotionac ul{
+	display : inline-block;
+	}
+}
+
